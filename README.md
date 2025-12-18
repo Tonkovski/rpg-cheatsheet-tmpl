@@ -4,6 +4,8 @@
 
 An interactive, web-based template for creating RPG cheatsheets.
 
+[Checkout the demo here.](https://tonkovski.github.io/rpg-cheatsheet-tmpl/)
+
 ## Features
 - **CSV-Driven**: Edit actions in `cheatsheet.csv` (id, priority, labels, text, pic).
 - **Priorities & Labels**: Color-coded badges (HIGH/MEDIUM/LOW/NG) and customizable emoji labels in `label.json`.
