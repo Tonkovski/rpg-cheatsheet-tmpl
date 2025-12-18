@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Cheatsheet Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>RPG Cheatsheet Template</h1>
+    <p>People are easily annoyed when quests broke without warning. Most online guides are served in static pages, making progress tracking difficult.</p>
+    <p>Maybe an interactive template with unified CSV sheet format can help.</p>
+    <p>Priority levels: 
+        <ul>
+            <li><span class="priority-badge priority-h">HIGH</span> for questline-related missable actions.</li>
+            <li><span class="priority-badge priority-m">MEDIUM</span> for standalone missible events.</li>
+            <li><span class="priority-badge priority-l">LOW</span> for standard events available any time throughout the main quest.</li>
+            <li><span class="priority-badge priority-ng">NG</span> for discouraged acts and choices which trigger negative endings or end quests early.</li>
+        </ul>
+    </p>
+    <p>Manually edit cheatsheet.csv for data, labels.json for label definition and emoji mapping.</p>
+    <p>Double-click on items to tick them off. Your progress is saved locally.</p>
+    <div class="center">
+        <button id="export-btn">Export Progress</button>
+        <button id="import-btn">Import Progress</button>
+    </div>
+    <table id="cheatsheet-table">
+        <thead>
+            <tr>
+                <th></th>
+                <th class="center">Pic</th>
+                <th class="center">Priority</th>
+                <th class="center">Labels</th>
+                <th>To-do</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jStorage/0.4.12/jstorage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
